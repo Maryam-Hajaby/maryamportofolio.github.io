@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mariam Ameen - Data Analyst Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    :root {
+      --primary-color: #5d737e;
+      --secondary-color: #64b6ac;
+      --light-color: #f0f7f4;
+      --accent-color: #c0fdfb;
+      --dark-color: #3a506b;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 5rem 0;
+      margin-bottom: 3rem;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .social-icon {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      color: var(--accent-color);
+      transform: translateY(-3px);
+    }
+
+    .project-card {
+      border: none;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: #fff;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-img {
+      height: 230px;
+      object-fit: cover;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover .project-img {
+      transform: scale(1.03);
+    }
+
+    .card-body {
+      padding: 1.25rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .project-title {
+      color: var(--dark-color);
+      font-weight: 700;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+      color: #555;
+    }
+
+    .section-title {
+      color: var(--primary-color);
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--secondary-color);
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      border-radius: 8px;
+      padding: 0.4em 0.6em;
+    }
+
+    .contact-info {
+      background-color: var(--light-color);
+      padding: 3rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .contact-icon {
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">Mariam Ameen</h1>
+      <h2 class="h4 mb-4">Data Analyst</h2>
+      <div class="d-flex justify-content-center mb-4">
+        <a href="https://www.linkedin.com/in/maryam-hajaby/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:maryam.hajaby@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Maryam-Hajaby" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <p class="lead mb-0">Transforming data into actionable insights for business growth</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="container py-5">
+    <h2 class="section-title">My Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1470&q=80" class="project-img" alt="Sales Dashboard">
+          <div class="card-body">
+            <h3 class="project-title">Sales Performance Dashboard</h3>
+            <p class="card-text">Interactive dashboard analyzing regional sales performance with Power BI, identifying trends and opportunities.</p>
+            <div>
+              <span class="badge bg-dark me-1">Power BI</span>
+              <span class="badge bg-info text-dark">Dashboard</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1470&q=80" class="project-img" alt="Customer Segmentation">
+          <div class="card-body">
+            <h3 class="project-title">Customer Segmentation</h3>
+            <p class="card-text">K-means clustering to segment customers into targeted groups for marketing strategies.</p>
+            <div>
+              <span class="badge bg-dark me-1">Python</span>
+              <span class="badge bg-info text-dark">Clustering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add more projects similarly -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">Passionate data analyst with 2+ years of experience transforming complex data into actionable business insights.</p>
+        <p>I specialize in helping organizations make data-driven decisions through advanced analytics, predictive modeling, and intuitive data visualization. My approach combines technical expertise with business acumen to deliver solutions that drive measurable impact.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-info">
+          <h2 class="section-title">Contact Info</h2>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <i class="fas fa-envelope contact-icon"></i>
+              <a href="mailto:maryam.hajaby@gmail.com" class="text-decoration-none">maryam.hajaby@gmail.com</a>
+            </li>
+            <li class="mb-3">
+              <i class="fab fa-linkedin contact-icon"></i>
+              <a href="https://www.linkedin.com/in/maryam-hajaby" class="text-decoration-none" target="_blank">LinkedIn Profile</a>
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-phone contact-icon"></i>
+              <span>+962795751901</span>
+            </li>
+            <li class="mb-3">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <span>Amman, Jordan</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0">&copy; Mariam Ameen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
